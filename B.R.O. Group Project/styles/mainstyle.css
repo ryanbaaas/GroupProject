@@ -146,14 +146,69 @@ header nav ul li a {
 
 .home-content {
         margin-top: 65px;
-        height: 100%;
+        height: 1000px;
         background-color: #fff;
         margin-left: -140px;
         width: 96%;
 }
 
-.home-content img {
+.cta img {
         width: 100%;
+        position: relative;
+}
+
+.cta h3 {
+        position: absolute;
+        width: 100%;
+        top: 200px;
+        left: -150px;
+        font-size: 40px;
+        color: white;
+        text-shadow: 3px 3px black;
+        font-family: 'Open Sans';
+}
+
+.cta h4 {
+        position: absolute;
+        width: 100%;
+        top: 250px;
+        left: 140px;
+        font-size: 22px;
+        color: white;
+        text-shadow: 3px 3px black;
+        font-family: 'Open Sans';
+}
+
+.cta .button-1 {
+        position: absolute;
+        top: 350px;
+        left: 430px;
+        text-align: center;
+        border-radius: 3px;
+        outline: 3px solid #002b40;
+        color: #fff;
+        width: 180px;
+        height: 50px;
+        font-size: 20px;
+        line-height: 50px;
+        margin: 0 auto;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -moz-osx-font-smoothing: grayscale;
+        overflow: hidden;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: color, background-color;
+        transition-property: color, background-color;
+
+}
+
+.cta .button-1:hover {
+        background: #002b40;
+        color: #fff;
 }
 
 .home-content h4 {
@@ -169,7 +224,47 @@ header nav ul li a {
         text-align: center;
 }
 
+.benefactor h4 {
+        margin-left: 0px;
+}
 
+.benefactor {
+        margin-left: 120px;
+        margin-top: 10px;
+        font-family: 'Lato';
+        margin: 20px;
+        text-align: center;
+}
+
+.button-2 {
+        position: absolute;
+        text-align: center;
+        left: 425px;
+        border-radius: 3px;
+        outline: 3px solid #002b40;
+        color: #002b40;
+        width: 180px;
+        height: 50px;
+        font-size: 20px;
+        line-height: 25px;
+        margin: 0 auto;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -moz-osx-font-smoothing: grayscale;
+        overflow: hidden;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: color, background-color;
+        transition-property: color, background-color;
+}
+
+.button-2:hover {
+        background: #002b40;
+        color: #fff;
+}
 
 .gallery-container {
         height: 800px;
