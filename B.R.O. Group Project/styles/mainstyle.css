@@ -162,7 +162,6 @@ header nav ul li a {
 }
 
 .cta h3 {
-        position: absolute;
         width: 100%;
         top: 200px;
         left: -150px;
@@ -172,19 +171,9 @@ header nav ul li a {
         font-family: 'Open Sans';
 }
 
-.cta h4 {
-        position: absolute;
-        width: 100%;
-        top: 250px;
-        left: 140px;
-        font-size: 22px;
-        color: white;
-        text-shadow: 3px 3px black;
-        font-family: 'Open Sans';
-}
+
 
 .cta .button-1 {
-        position: absolute;
         top: 350px;
         left: 430px;
         text-align: center;
