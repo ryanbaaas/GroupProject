@@ -428,3 +428,17 @@ td p {
         height: 3675px;
         background-color: #f4f4f4;
 }
+
+.events-cont {
+        padding-top: 1px;
+        height: 2000px;
+        background-color: #f4f4f4;
+}
+
+.events-content {
+        margin-top: 65px;
+        height: 1950px;
+        background-color: #fff;
+        margin-left: -140px;
+        width: 96%;
+}
