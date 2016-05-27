@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Join the Orchestra - Barrier Reef Orchestra</title>
+  <link rel="stylesheet" type="text/css" href="css/mainstyle.css">
+  <script src="js/gen_validatorv4.js" type="text/javascript"></script>
+  <link href='https://fonts.googleapis.com/css?family=Anonymous+Pro' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <a href="index.html"> <img src="images/logo.png" alt="logo"/><h1>Barrier Reef Orchestra</h1>
+            <nav class="menu">
+                  <ul class="clearfix">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="events.html">Upcoming Events</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="supporters.html">Supporters</a></li>
+                        <li><a href="people.html">People</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                  </ul>
+            </nav>
+      </div>
+    </header>
+
+    <div class="join-container">
+        <div class="wrapper">
+
+    <div class="join-content">
+        <div class="join-info">
+            <h3>Apply to Join the Orchestra Today!</h3>
+            <p>Do you have what it takes to perform in a Far North Queensland Icon? Fill out the fields below and send us your request to become a member</p>
+            <p>* = Required Fields</p>
+        </div>
+
+
+    <div class="join">
+        <form id="joinBand">
+
+          <label>Title *</label>
+          <select id="title" name="title">
+            <option value="blank">Select an Option</option>
+            <option value="mr">Mr</option>
+            <option value="miss">Miss</option>
+            <option value="mrs">Mrs</option>
+            <option value="ms">Ms</option>
+          </select>
+
+          <label>Family Name *</label>
+          <input id="famName" name="name" placeholder="Type Here">
+
+          <label>Given Name/s *</label>
+          <input id="givName" name="name" placeholder="Type Here">
+
+          <label>Membership Type *</label>
+          <select onchange="memberSelect(this);" name="member">
+            <option value="" selected>Select an Option</option>
+            <option value="adult">Adult</option>
+            <option value="family">Family</option>
+            <option value="student">Student</option>
+            <option value="concession">Concession</option>
+          </select>
+
+          <div id="family">
+          <label>Children of Family Membership *</label>
+          <label>Child One</label>
+          <input id="childOne" name="childOne" placeholder="Child 1 Name">
+          <label>Child 1 D.O.B.</label>
+          <input id="childOneDb" name="childOneDb" placeholder="DD/MM/YYYY">
+          <label>Child Two</label>
+          <input id="childTwo" name="childTwo" placeholder="Child 2 Name">
+          <label>Child 2 D.O.B.</label>
+          <input id="childTwoDb" name="childTwoDb" placeholder="DD/MM/YYYY">
+          <label>Child Three</label>
+          <input id="childThree" name="childThree" placeholder="Child 3 Name">
+          <label>Child 3 D.O.B.</label>
+          <input id="childThreeDb" name="childThreeDb" placeholder="DD/MM/YYYY">
+        </div>
+          <label>Address *</label>
+          <input id="address" name="address" placeholder="Type Here">
+
+          <label>Email *</label>
+          <input id="email" name="email" type="email" placeholder="Type Here">
+
+          <label>Phone Number *</label>
+          <input id="phoneNum" name="number" type="tel" placeholder="Type Here">
+
+          <label>Reason for Wanting to Join</label>
+          <textarea id="reason" name="message" placeholder="Type Here"></textarea>
+
+          <input id="submit" name="submit" type="submit" value="Submit">
+
+    <script>
+    function memberSelect(that) {
+      if (that.value == "family") {
+        document.getElementById("family").style.display = "block";
+    } else {
+        document.getElementById("family").style.display = "none";
+      }
+    }
+
+    var frmvalidator  = new Validator("joinBand");
+    frmvalidator.addValidation("title","req","Please select your title");
+    frmvalidator.addValidation("famName","req","Please enter your family name");
+    frmvalidator.addValidation("givName","req","Please enter your given name/s");
+    frmvalidator.addValidation("member","req","Please choose your Membership Type");
+    frmvalidator.addValidation("address","req","Please enter your address");
+    frmvalidator.addValidation("email","maxlen=50");
+    frmvalidator.addValidation("email","req");
+    frmvalidator.addValidation("email","email");
+    frmvalidator.addValidation("phoneNum","maxlen=15");
+    frmvalidator.addValidation("phoneNum","numeric");
+    frmvalidator.addValidation("reason","req","Please give a Reason as to why you wish to join the Orchestra")
+    </script>
+
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+<footer>
+      <div class="wrapper">
+        <div class="footer-supp">
+            <h5>Proudly Supported By</h5>
+              <div class="sponsor-footer">
+              <div class="sponsor-images-footer1">
+                  <img src="images/sponsors/tville.png">
+                  <img src="images/sponsors/acvc.png">
+                  <img src="images/sponsors/afcm.png">
+                  <img src="images/sponsors/asap.png">
+                  <img src="images/sponsors/racq.png">
+              </div>
+              </div>
+        </div>
+      </div>
+</footer>

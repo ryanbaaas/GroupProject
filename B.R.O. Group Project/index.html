@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <title>Welcome - Barrier Reef Orchestra</title>
   <link rel="stylesheet" type="text/css" href="css/mainstyle.css">
@@ -9,6 +10,11 @@
   <link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Jockey+One' rel='stylesheet' type='text/css'>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+  <script src="js/hamburger.js"></script>
   <div id="fb-root"></div>
   <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -21,6 +27,7 @@
 
 <body>
 
+  <div id="home-page-browser">
     <header>
         <div class="wrapper">
             <a href="index.html"> <img src="images/logo.png" alt="logo"/><h1>Barrier Reef Orchestra</h1>
@@ -49,7 +56,7 @@
                   <img src="images/fullorc.jpg" alt="">
                   <h3>Interested in becoming a member?</h3>
                   <h4>Click the button below to find out more</h4>
-                  <a href="member.html" class="button-1">Apply Now</a>
+                  <a href="contact.html" class="button-1">Apply Now</a>
               </div>
               <div class="desc">
               <h4>The Barrier Reef Orchestra - A North Queensland Icon</h4>
@@ -65,11 +72,81 @@
           </div>
         </div>
       </div>
+    </div>
+
+  <div id="home-page-mobile">
+    <!--This wrapping container is used to get the width of the whole content-->
+    <div id="container">
+
+        <!--The Hamburger Button in the Header-->
+        <div id="header-mobile">
+            <div id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id="header-title">
+              <h2>Barrier Reef Orchestra</h2>
+            </div>
+        </div>
+
+        <!--The mobile navigation Markup hidden via css-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Upcoming Events</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="supporters.html">Supporters</a></li>
+                <li><a href="people.html">People</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+
+        <!--The Layer that will be layed over the content
+        so that the content is unclickable while menu is shown-->
+        <div id="contentLayer"></div>
+
+        <!--The content of the site-->
+        <div id="content">
+            <div class="cta-mobile">
+              <h3>Interested in becoming a member?</h3>
+              <a href="contact.html" class="button-1">Apply Now</a>
+            </div>
+                <div class="desc-mobile">
+                    <h2>The Barrier Reef Orchestra - A North Queensland Icon</h2>
+
+                    <p>The Barrier Reef Orchestra was formed in Townsville in 2000 after a workshop conducted by Richard McIntyre from Canberra. Over the past 15 years it has gone from strength to strength and now presents three main concerts a year, as well as smaller concerts such as the children’s concert Peter and the Wolf in 2014. We are a community orchestra, drawing players from a large cross section of the Townsville community and sometimes beyond. All are drawn together by their great love of orchestral music and desire to provide North Queensland with quality performances. Depending on the program up to 50 musicians play a wide ranging repertoire which has included some of the great orchestral compositions such as the New World Symphony by Dvorak and most of the Beethoven symphonies as well as Tchaikovsky and Bizet.</p>
+
+                <div class="benefactor-mobile">
+                    <h2>Become a Benefactor Today</h2>
+                    <p>With a philanthropic gift of $200 or more (we'll leave that up to you) you can become and Orchestra Benefactor and be placed on our Benefactor roll for twelve months. This roll will be published in each conert program and on our website for twelve months. As a benefactor you will also receive two complimentary tickets to our next concert, be placed on the mailing list for our newsletter and will be a guest at our annual Season's Launch function. <strong>Click the button below</strong> to be directed to the benefactor form page.</p>
+                <div class="button-2-fix-mobile">
+                    <a href="donate.html" class="button-2">Become a Benefactor</a>
+                </div>
+                </div>
+                </div>
+            </div>
+
+    </div>
+  </div>
+
 </body>
 
 <footer>
       <div class="wrapper">
         <div class="footer-supp">
             <h5>Proudly Supported By</h5>
-    </div>
+              <div class="sponsor-footer">
+              <div class="sponsor-images-footer1">
+                  <img src="images/sponsors/tville.png">
+                  <img src="images/sponsors/acvc.png">
+                  <img src="images/sponsors/afcm.png">
+                  <img src="images/sponsors/asap.png">
+                  <img src="images/sponsors/racq.png">
+              </div>
+              </div>
+        </div>
+      </div>
 </footer>
+</html>
