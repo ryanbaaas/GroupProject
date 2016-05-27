@@ -581,12 +581,13 @@ input:focus, textarea:focus {
 td {
 
   	align: center;
-  	text-align:center;
+  	text-align:left;
+
   }
 
 td h5 {
   	vertical-align:top;
-  	margin-left: 10px;
+  	margin-left:10px;
   }
 
 td p {
@@ -594,6 +595,10 @@ td p {
   	margin-left: 10px;
   	text-align:left;
   }
+  
+ td img {
+	 margin-left:10px;
+ }
 
 .table-align {
   	vertical-align:top;
@@ -603,16 +608,17 @@ td p {
 
 .people-content {
     margin-top: 65px;
-    height: 4200px;
+    height: 5850px;
     background-color: #fff;
     margin-left: -140px;
     width: 96%;
     margin-bottom: 20px;
   }
+  
 .people-cont {
     padding-top: 1px;
     padding-left: 325px;
-    height: 4300px;
+    height: 5950px;
     background-color: #f4f4f4;
   }
 
@@ -620,19 +626,62 @@ td p {
     text-align: center;
 }
 
+.supporters-content {
+    margin-top: 65px;
+    height: 800px;
+    background-color: #fff;
+    margin-left: -140px;
+    width: 96%;
+    margin-bottom: 20px;
+	
+  }
+.supporters-content p {
+	text-align:left;
+	font-size:16px;
+	margin-left:80px;
+	margin-right:80px;
+}
+
+.supporters-cont {
+    padding-top: 1px;
+    padding-left: 325px;
+    height: 900px;
+    background-color: #f4f4f4;
+  }
+
+.supporters-cont h4 {
+    text-align: center;
+}
 .about-container {
-    height: 1700px;
+    height: 2500px;
     background-color: #f4f4f4;
     padding-top: 1px;
 }
 
+.supporters-cont ul {
+	margin-left:80px;
+	font-size:18px;
+}
+
+
 .about-cont {
     background-color: #fff;
     margin-left: 130px;
-    height: 1600px;
+    height: 2400px;
     width: 80%;
     margin-top: 75px;
 
+}
+
+.about-cont td {
+	margin-left:200px;
+}
+
+.about-cont td {
+	margin-left:150px;
+}
+.about-container td {
+	margin-left:150px;
 }
 
 .about-cont p {
